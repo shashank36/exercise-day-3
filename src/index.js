@@ -4,7 +4,7 @@
  * Don't use Array.prototype.reverse
  */
 function reverseString(string) {
-
+  return string.split('').reverse().join('');
 }
 
 /** (*)
@@ -19,14 +19,32 @@ function binaryAgent(str) {
  * Return true for palindrome else false
  */
 function isPalindrome(string) {
+  const str = string.split('').reverse().join('');
+  if (str === string) {
+    return true;
+  }
+  return false;
+  // const len = string.length;
+  // for (let i = 0; i < Math.floor(len / 2); i + 1) {
+  //   if (string[i] !== string[len - 1 - i]) {
+  //     return false;
+  //   }
+  // }
+  // return true;
   // Was it a car or a cat I saw
 }
-
 /** (*)
 * Return the longest word in a string
 */
 function longestWordInString(string) {
-
+  // const arr = string.split(' ');
+  // let count = 0;
+  // for (let i = 0; i < arr.length; i + 1) {
+  //   if (arr[i].length > count) {
+  //     count = arr[i].length;
+  //   }
+  // }
+  // return count;
 }
 
 /**
